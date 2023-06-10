@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <p>Bài 1: Quản lí tuyển sinh</p>
+    <div class="card">
+        <div class="card-header">Quản lí tuyển sinh</div>
+        <div class="card-body">
+            <input type="text" placeholder="Điểm chuẩn" id="point">
+            <select name="Chọn khu vực" class="form-control" id="area">
+                <option>Chọn khu vực</option>
+                <option>A</option>
+                <option>B</option>
+                <option>C</option>
+            </select>
+            <select name="Chọn đối tượng" class="form-control" id="object">
+                <option>Chọn đối tượng</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+            <input type="text" placeholder="Điểm môn thú 1" id="point1">
+            <input type="text" placeholder="Điểm môn thú 2" id="point2">
+            <input type="text" placeholder="Điểm môn thú 3" id="point3">
+            <button type="button" class="btn btn-primary" onclick="ketqua()">Kết quả</button>
+        </div>
+        <div class="card-footer text-muted" id="result1"></div>
+    </div>
+
+    <p>Bài 2: Tính tiền điện</p>
+    <div class="card">
+        <div class="card-header">Tính tiền điện</div>
+        <div class="card-body">
+            <input type="text" placeholder="Nhập họ tên" id="name">
+            <input type="text" placeholder="Nhập số kw" id="kw">
+            <button type="button" class="btn btn-primary" onclick="tinhTienDien()">Tính tiền điện</button>
+        </div>
+        <div class="card-footer text-muted" id="result2"></div>
+    </div>
+
+    <p>Bài 3: Tính thuế thu nhập cá nhân</p>
+    <div class="card">
+        <div class="card-header">Tính thuế thu nhập cá nhân</div>
+        <div class="card-body">
+            <input type="text" placeholder="Nhập họ tên" id="name1">
+            <input type="text" placeholder="Nhập số kw" id="kw">
+            <button type="button" class="btn btn-primary" onclick="tinhTienDien()">Tính tiền điện</button>
+        </div>
+        <div class="card-footer text-muted" id="result2"></div>
+    </div>
+
+
+
+      
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
