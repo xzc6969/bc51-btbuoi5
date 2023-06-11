@@ -62,14 +62,14 @@
     <div class="card">
         <div class="card-header">Tính tiền cáp</div>
         <div class="card-body">
-            <select name="Chọn loại khách hàng" class="form-control" id="client">
+            <select name="Chọn loại khách hàng" onchange="myFunction(this);" class="form-control" id="client">
                 <option>Chọn loại khách hàng</option>
                 <option>Nhà dân</option>
                 <option>Doanh nghiệp</option>
             </select>
             <input type="text" placeholder="Nhập mã khách hàng" id="MKH">
             <input type="text" placeholder="Số kênh cao cấp" id="SKCC">
-            <input type="text" placeholder="Số kết nối" id="SKN">
+            <input type="text" placeholder="Số kết nối" id="SKN" style="display: none;">
             <button type="button" class="btn btn-primary" onclick="tinhTienCap()">Tính tiền cáp</button>
             
         </div>

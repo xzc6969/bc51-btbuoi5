@@ -137,18 +137,23 @@ var ND_CC=7.5;
 var DN_HD=15;
 var DN_CB=75;
 var DN_CC=50;
-
+function myFunction(x){
+  var e = x.selectedIndex;
+  var LKH = x.options[e].text;
+ 
+  if(LKH === "Doanh nghiệp"){
+    getEle("SKN").style.display = "block"
+  }else {
+    getEle("SKN").style.display = "none";
+  }
+}
 function tinhTienCap(){
   var MKH = getEle("MKH").value*1;
   var SKCC = getEle("SKCC").value*1;
   var SKN = getEle("SKN").value*1;
-  var tienCap = 0;
-  var e =getEle("client");
+  var e = getEle("client");
   var LKH = e.options[e.selectedIndex].text;
-  
-  // if(LKH == "Doanh nghiệp"){
-  //   getEle("SKN").style.display = "block";
-  // }
+  var tienCap = 0;
   if(LKH == "Nhà dân"){
     tienCap = ND_HD + ND_CB + ND_CC*SKCC;
   }else if(LKH == "Doanh nghiệp" && SKN>=0 && SKN<=10){
