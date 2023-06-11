@@ -51,12 +51,30 @@
         <div class="card-header">Tính thuế thu nhập cá nhân</div>
         <div class="card-body">
             <input type="text" placeholder="Nhập họ tên" id="name1">
-            <input type="text" placeholder="Nhập số kw" id="kw">
-            <button type="button" class="btn btn-primary" onclick="tinhTienDien()">Tính tiền điện</button>
+            <input type="text" placeholder="Tổng số thu nhập" id="total">
+            <input type="text" placeholder="Số người phụ thuộc" id="people">
+            <button type="button" class="btn btn-primary" onclick="tinhTienThue()">Tính tiền thuế</button>
         </div>
-        <div class="card-footer text-muted" id="result2"></div>
+        <div class="card-footer text-muted" id="result3"></div>
     </div>
 
+    <p>Bài 4: Tính tiền cáp</p>
+    <div class="card">
+        <div class="card-header">Tính tiền cáp</div>
+        <div class="card-body">
+            <select name="Chọn loại khách hàng" class="form-control" id="client">
+                <option>Chọn loại khách hàng</option>
+                <option>Nhà dân</option>
+                <option>Doanh nghiệp</option>
+            </select>
+            <input type="text" placeholder="Nhập mã khách hàng" id="MKH">
+            <input type="text" placeholder="Số kênh cao cấp" id="SKCC">
+            <input type="text" placeholder="Số kết nối" id="SKN">
+            <button type="button" class="btn btn-primary" onclick="tinhTienCap()">Tính tiền cáp</button>
+            
+        </div>
+        <div class="card-footer text-muted" id="result4"></div>
+    </div>
 
 
       
